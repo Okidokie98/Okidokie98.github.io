@@ -1,0 +1,17 @@
+.navbar {
+    list-style-type: none;
+    background-color: lightgreen; /* Used for testing */
+    margin: 0;
+    padding: 0;
+  }
+
+.navbar li a {
+    display: block;
+    width: 75px;
+    background-color: red;  /* Used for testing */
+  }
+  .navbar li a:hover {
+    display: block;
+    width: 75px;
+    background-color: purple;  /* Used for testing */
+  }
