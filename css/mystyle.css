@@ -1,17 +1,66 @@
+
+
 .navbar {
-    list-style-type: none;
-    background-color: lightgreen; /* Used for testing */
-    margin: 0;
-    padding: 0;
-  }
+  list-style-type: none;
+  background-color: lightgreen;
+  /* Used for testing */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  float: left;
+  padding-top: 10px;
+}
 
 .navbar li a {
-    display: block;
-    width: 75px;
-    background-color: red;  /* Used for testing */
-  }
-  .navbar li a:hover {
-    display: block;
-    width: 75px;
-    background-color: purple;  /* Used for testing */
-  }
+  display: inline;
+  width: 75px;
+  background-color: red;
+  /* Used for testing */
+  padding: 8px;
+}
+
+.navbar li a:hover {
+  display: inline;
+  width: 75px;
+  background-color: lightgray;
+  /* Used for testing */
+}
+
+.box #box-1,
+.box #box-2,
+.box #box-3 {
+  width: 32%;
+  height: 50%;
+  display: inline-block;
+  text-align: center;
+}
+
+
+.box-image {
+  width: 32%;
+  height: auto;
+  text-align: center;
+}
+
+#box-1 {
+  background-color: lightcoral;
+}
+
+#box-2 {
+  background-color: greenyellow;
+}
+
+#box-3 {
+  background-color: royalblue;
+}
+
+body {
+  background: lightgrey;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
