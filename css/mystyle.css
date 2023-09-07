@@ -6,6 +6,8 @@
   /* Used for testing */
   margin: 0;
   padding: 0;
+  /* position: fixed; */
+  width: 100%;
 }
 
 .navbar li {
@@ -57,7 +59,7 @@
 }
 
 body {
-  background: lightgrey;
+  background: lightgray;
 }
 
 .active {
@@ -79,8 +81,42 @@ body {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
   z-index: 1;
+  bottom: 100%;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.moreInfo {
+  font-style: italic;
+  display: inline;
+}
+
+.all-posts {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+.all-posts > h1, .browser {
+  margin: 10px;
+  padding: 5px;
+}
+
+.post {
+  background: white;
+}
+
+.post > p {
+  margin: 4px;
+  font-size: 90%;
+}
+
+footer {
+  background-color: lightgreen;
+}
+
+main {
+  text-align: center;
 }
