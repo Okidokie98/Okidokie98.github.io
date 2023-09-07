@@ -106,6 +106,10 @@ body {
 
 .post {
   background: white;
+  padding: 5px;
+  margin: 10px;
+  border-style: solid;
+  border-color: black;
 }
 
 .post > p {
@@ -118,5 +122,12 @@ footer {
 }
 
 main {
+  text-align: center;
+}
+
+table, th, tr, td {
+  border-style: solid;
+  border-color: black;
+  padding: 1px;
   text-align: center;
 }
