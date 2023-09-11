@@ -123,6 +123,7 @@ footer {
 
 main {
   text-align: center;
+  /* color: blue; */
 }
 
 table, th, tr, td {
@@ -169,4 +170,20 @@ table, th, tr, td {
   width: 12px;
   height: 12px;
   margin: 3px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-child-1 {
+flex: 1;
+}
+
+.flex-child-2 {
+  margin-right: 5px;
+}
+
+.faq-list {
+  text-align: left;
 }
