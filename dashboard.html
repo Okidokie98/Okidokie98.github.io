@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/mystyle.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -29,141 +30,148 @@
       <div class="flex-child-2">
         <ul class="legend">
           <h3>Legend</h3>
-          <li><span class="study-complete"></span>Complete</li>
           <li><span class="study-upcoming"></span>Upcoming</li>
+          <li><span class="study-complete"></span>Complete</li>
           <li><span class="study-ongoing"></span>Ongoing</li>
-          <li><span class="study-failed"></span>Failed</li>
           <li><span class="study-half-complete"></span>Half Complete</li>
+          <li><span class="study-failed"></span>Failed</li>
+          
         </ul>
       </div>
       <div class="flex-child-1">
 
 
-          <table>
-            <tr>
-              <th>Quartile</th>
-              <th>Course</th>
-              <th>EC's Awarded</th>
-              <th>Exam</th>
-              <th>Grade</th>
-            </tr>
+        <table>
+          <tr>
+            <th>Quartile</th>
+            <th>Course</th>
+            <th>EC's Awarded</th>
+            <th>Exam</th>
+            <th>Grade</th>
+            <th><abbr title="Avergae Grade across the course or Quartile">AVG</abbr></th>
+          </tr>
 
-            <tr>
-              <td rowspan="3">1</td>
-              <td class="study-complete">Program- & Career Orientation</td>
-              <td class="study-complete">2.5 EC</td>
-              <td class="study-complete">Website</td>
-              <td class="study-complete">-</td>
-            </tr>
+          <tr>
+            <td rowspan="3">1</td>
+            <td class="study-complete">Program- & Career Orientation</td>
+            <td class="study-complete">2.5 EC</td>
+            <td class="study-complete">Website</td>
+            <td class="study-complete">7.5</td>
+            <td rowspan="3">-</td>
+          </tr>
 
-            <tr>
-              <td class="study-upcoming">Computer Science Basics</td>
-              <td class="study-upcoming">5.0 EC</td>
-              <td class="study-upcoming">Written exam</td>
-              <td class="study-upcoming">-</td>
-            </tr>
+          <tr>
+            <td class="study-upcoming">Computer Science Basics</td>
+            <td class="study-upcoming">5.0 EC</td>
+            <td class="study-upcoming">Written exam</td>
+            <td class="study-upcoming">-</td>
+          </tr>
 
-            <tr>
-              <td class="study-ongoing">Programming Basics</td>
-              <td class="study-ongoing">5.0 EC</td>
-              <td class="study-ongoing">Case study exam</td>
-              <td class="study-ongoing">-</td>
-            </tr>
+          <tr>
+            <td class="study-ongoing">Programming Basics</td>
+            <td class="study-ongoing">5.0 EC</td>
+            <td class="study-ongoing">Case study exam</td>
+            <td class="study-ongoing">-</td>
+          </tr>
 
-            <tr>
-              <td rowspan="2">2</td>
-              <td class="study-failed" rowspan="2">Object-Oriented Programming</td>
-              <td class="study-failed" rowspan="2">10.0 EC</td>
-              <td class="study-failed">Group assignment</td>
-              <td class="study-failed">-</td>
-            </tr>
-            <tr class="">
-              <td class="study-failed">Case study exam</td>
-              <td class="study-failed">-</td>
-            </tr>
+          <tr>
+            <td rowspan="2">2</td>
+            <td class="study-failed" rowspan="2">Object-Oriented Programming</td>
+            <td class="study-failed" rowspan="2">10.0 EC</td>
+            <td class="study-failed">Group assignment</td>
+            <td class="study-failed">4.5</td>
+            <td rowspan="2">-</td>
+          </tr>
+          <tr class="">
+            <td class="study-failed">Case study exam</td>
+            <td class="study-failed">5.4</td>
+          </tr>
 
-            <tr>
-              <td rowspan="4">3</td>
-              <td class="study-half-complete" rowspan="4">Framework Project 1</td>
-              <td class="study-failed" rowspan="4">10.0 EC</td>
-              <td class="study-complete">On-site case study exam</td>
-              <td class="study-complete">-</td>
-            </tr>
-            <tr class="">
-              <td class="study-complete">Databse exam</td>
-              <td class="study-complete">-</td>
-            </tr>
-            <tr class="">
-              <td class="study-ongoing">Group presentation</td>
-              <td class="study-ongoing">-</td>
-            </tr>
-            <tr class="">
-              <td class="study-failed">Group portfolio</td>
-              <td class="study-failed">-</td>
-            </tr>
+          <tr>
+            <td rowspan="4">3</td>
+            <td class="study-half-complete" rowspan="4">Framework Project 1</td>
+            <td class="study-failed" rowspan="4">10.0 EC</td>
+            <td class="study-complete">On-site case study exam</td>
+            <td class="study-complete">6.1</td>
+            <td rowspan="4">-</td>
+          </tr>
+          <tr class="">
+            <td class="study-complete">Databse exam</td>
+            <td class="study-complete">6.5</td>
+          </tr>
+          <tr class="">
+            <td class="study-ongoing">Group presentation</td>
+            <td class="study-ongoing">-</td>
+          </tr>
+          <tr class="">
+            <td class="study-failed">Group portfolio</td>
+            <td class="study-failed">4.9</td>
+          </tr>
 
-            <tr class="">
-              <td rowspan="3">4</td>
-              <td rowspan="3">Framework Project 2</td>
-              <td rowspan="3">10.0 EC</td>
-              <td class="">Final delivery</td>
-              <td class="">-</td>
-            </tr>
-            <tr class="">
-              <td class="">Report of acceptance</td>
-              <td class="">-</td>
-            </tr>
-            <tr class="">
-              <td class="">IT Development Portfolio</td>
-              <td class="">-</td>
-            </tr>
+          <tr class="">
+            <td rowspan="3">4</td>
+            <td rowspan="3">Framework Project 2</td>
+            <td rowspan="3">10.0 EC</td>
+            <td class="">Final delivery</td>
+            <td class="">-</td>
+            <td rowspan="3">-</td>
+          </tr>
+          <tr class="">
+            <td class="">Report of acceptance</td>
+            <td class="">-</td>
+          </tr>
+          <tr class="">
+            <td class="">IT Development Portfolio</td>
+            <td class="">-</td>
+          </tr>
 
-            <tr class="">
-              <td>3/4</td>
-              <td>Business IT Consultancy basics</td>
-              <td>2.5 EC</td>
-              <td class="">Video</td>
-              <td class="">-</td>
-            </tr>
+          <tr class="">
+            <td>3/4</td>
+            <td>Business IT Consultancy basics</td>
+            <td>2.5 EC</td>
+            <td class="">Video</td>
+            <td class="">-</td>
+            <td rowspan="1">-</td>
+          </tr>
 
-            <tr class="">
-              <td rowspan="3">Year</td>
-              <td>IT Personality Week</td>
-              <td>1.25 EC</td>
-              <td class="">Portfolio</td>
-              <td class="">-</td>
-            </tr>
-            <tr class="">
-              <td>IT Personality 1</td>
-              <td>1.25 EC</td>
-              <td class="">Portfolio</td>
-              <td class="">-</td>
-            </tr>
-            <tr class="">
-              <td>IT Personality 2</td>
-              <td>1.25 EC</td>
-              <td class="">Portfolio</td>
-              <td class="">-</td>
-            </tr>
+          <tr class="">
+            <td rowspan="3">Year</td>
+            <td>IT Personality Week</td>
+            <td>1.25 EC</td>
+            <td class="">Portfolio</td>
+            <td class="">-</td>
+            <td rowspan="3">-</td>
+          </tr>
+          <tr class="">
+            <td>IT Personality 1</td>
+            <td>1.25 EC</td>
+            <td class="">Portfolio</td>
+            <td class="">-</td>
+          </tr>
+          <tr class="">
+            <td>IT Personality 2</td>
+            <td>1.25 EC</td>
+            <td class="">Portfolio</td>
+            <td class="">-</td>
+          </tr>
 
-          </table>
+        </table>
       </div>
-    
-    <div class="flex-child-1">
 
-      <h1>NBSA</h1>
-      <h3>Negative Binding Study Advice</h3>
-      <p>To qualify for the next year of the study you would need a minimum of 45 EC.</p>
-      <label for="current-ec">Current EC:</label>
-      <meter id="current-ec" value="0" min="0" max="60" low="45" high="45" optimum="60">0 out of 60</meter>
+      <div class="flex-child-1">
 
-      <label for="nbsa-ec">NBSA Standard:</label>
-      <meter id="nbsa-ec" value="45" min="0" max="60" low="0" high="55" optimum="60">45 out of 60</meter>
+        <h2>Study Progress</h2>
+        <aside>To qualify for the next year of the study you would need a minimum of 45 EC.</aside>
+        
+        <hr/>
+        <br/>
+        <label for="current-ec"> 
+          <progress value="2.5" max="60" class="w3-xxlarge">70 %</progress>
+        </label>
 
-      <label for="goal-ec">End of the year goal:</label>
-      <meter id="goal-ec" value="1">100%</meter>
+
+      </div>
     </div>
-  </div>
 
   </main>
 </body>
@@ -174,14 +182,15 @@
     <span><img src="/images/HZ Logo.png" alt="HZ Logo"></span>
     <div class="dropdown-content">
       <ul>
-        <li><a target="_blank"
-            href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/OER-HZ-Bacheloropleidingen-voltijd-2023-2024-DEF-versie-20230720.pdf">CER
-            (Course and Examination Regulations)</a></li>
-        <li><a target="_blank"
-            href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf">IR
-            (Implementation Regulations)</a></li>
-        <li><a target="_blank" href=""></a>HZ Learn</li>
-        <li><a target="_blank" href=""></a>HZ Teams</li>
+        <li>
+          <a target="_blank"
+            href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/OER-HZ-Bacheloropleidingen-voltijd-2023-2024-DEF-versie-20230720.pdf">
+            CER (Course and Examination Regulations)
+          </a>
+        </li>
+        <li><a target="_blank" href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf">IR (Implementation Regulations)</a></li>
+        <li><a target="_blank" href="https://learn.hz.nl/my/">HZ Learn</a></li>
+        <li><a target="_blank" href="https://teams.microsoft.com/_#/school/teams-grid/General?ctx=teamsGrid">HZ Teams</a></li>
         <li><a target="_blank" href="https://hz.osiris-student.nl/#/voortgang/">Study Progress</a></li>
         <li><a target="_blank" href="https://github.com/HZ-HBO-ICT">Github HZ</a></li>
       </ul>

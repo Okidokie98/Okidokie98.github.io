@@ -12,7 +12,7 @@
   float: left;
   padding-top: 10px;
 }
-
+  
 .navbar li a {
   display: inline;
   width: 75px;
@@ -21,7 +21,7 @@
   padding: 8px;
   border: 1px;
   margin: 1px;
-  padding: 7.5px;
+  padding-bottom: 7.5px;
   border-style: solid;
   border-color: black;
 }
@@ -36,10 +36,10 @@
 .box #box-1,
 .box #box-2,
 .box #box-3 {
-  width: 32%;
-  height: 50%;
+  width: 31%;
   display: inline-block;
   text-align: center;
+  border: 2px solid black;
 }
 
 
@@ -193,4 +193,15 @@ td {
 
 .faq-list {
   text-align: left;
+}
+
+progress {
+  margin-top: 20px;
+  margin-left: -50px;
+ /* transform: rotate(-90deg); */
+  height: 200px;
+}
+
+progress:before {
+  content: 'Current EC: ' attr(value) ' / ' attr(max);
 }
