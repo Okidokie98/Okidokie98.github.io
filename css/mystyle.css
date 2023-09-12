@@ -33,34 +33,6 @@
   /* Used for testing */
 }
 
-.box #box-1,
-.box #box-2,
-.box #box-3 {
-  width: 31%;
-  display: inline-block;
-  text-align: center;
-  border: 2px solid black;
-}
-
-
-.box-image {
-  width: 32%;
-  height: auto;
-  text-align: center;
-}
-
-#box-1 {
-  background-color: lightcoral;
-}
-
-#box-2 {
-  background-color: greenyellow;
-}
-
-#box-3 {
-  background-color: royalblue;
-}
-
 body {
   background-color: lightgray;
 }
@@ -204,4 +176,27 @@ progress {
 
 progress:before {
   content: 'Current EC: ' attr(value) ' / ' attr(max);
+}
+
+/* Home page boxes version 2.0 */
+/* Change class names perhaps */
+
+.col-container {
+  display: table; /* Make the container element behave like a table */
+  width: 100%; /* Set full-width to expand the whole page */
+  margin: auto;
+  padding: 5px;
+}
+
+.new-box-test {
+  width: 30%;
+  height: 500px;
+  border: 2px solid black;
+  margin: auto;
+  padding: 5px;
+  display: table-cell;
+}
+
+.image-border {
+  border: 3px solid black;
 }
