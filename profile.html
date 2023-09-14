@@ -6,10 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="css/mystyle.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://kit.fontawesome.com/6989e559e1.js" crossorigin="anonymous"></script>
   <title>My Profile</title>
 </head>
 
@@ -21,55 +23,290 @@
     <a href="faq.html">FAQ</a>
     <a href="blog.html">Blog</a>
     <!-- <button onclick="openNav()" class="btn btn-primary, side-menu">Open</button> -->
-    <img src="images/Sidemenu icon.png" onclick="openNav()" class="side-menu, side-menu-icon"/>
+    <img src="images/Sidemenu icon.png" onclick="openNav()" class="side-menu, side-menu-icon" />
   </div>
-<!-- Sidebar start -->
+  <!-- Sidebar start -->
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a target="_blank"
-        href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/OER-HZ-Bacheloropleidingen-voltijd-2023-2024-DEF-versie-20230720.pdf">
-        CER (Course and Examination Regulations)
-      </a>
     <a target="_blank"
-        href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf">IR
-        (Implementation Regulations)</a>
+      href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/OER-HZ-Bacheloropleidingen-voltijd-2023-2024-DEF-versie-20230720.pdf">
+      CER (Course and Examination Regulations)
+    </a>
+    <a target="_blank"
+      href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf">IR
+      (Implementation Regulations)</a>
     <a target="_blank" href="https://learn.hz.nl/my/">HZ Learn</a>
     <a target="_blank" href="https://teams.microsoft.com/_#/school/teams-grid/General?ctx=teamsGrid">HZ
-        Teams</a>
+      Teams</a>
     <a target="_blank" href="https://hz.osiris-student.nl/#/voortgang/">Study Progress</a>
     <a target="_blank" href="https://github.com/HZ-HBO-ICT">Github HZ</a>
-    <a href="https://hz.nl/" target="_blank"><img src="https://cdn.discordapp.com/attachments/1149642068302503988/1151073961975758889/HZ_logo_full_allmode_v2.png" width="300px"/></a>
+    <a href="https://hz.nl/" target="_blank"><img
+        src="https://cdn.discordapp.com/attachments/1149642068302503988/1151073961975758889/HZ_logo_full_allmode_v2.png"
+        width="300px" /></a>
   </div>
-  
+
   <!-- Use any element to open the sidenav -->
 
 
-<!-- Sidebar end -->  
+  <!-- Sidebar end -->
   <main>
     <div class="col-container">
       <div class="new-box-test">
         <h1>About Me</h1>
-        <img src="/images/Okidokie98 at KVM Esports.jpg" alt="Okidokie98 at KVM Esports" width=auto height="350">
-        <ul>
-          <li>Name: Brandon de Baat</li>
-          <li>Alias: Okidokie98<cite><small>[<a target="_blank"
-                  href="https://liquipedia.net/rainbowsix/Okidokie98">Liquipedia
-                  Page</a></cite>]</small></li>
-          <li>Age: 24 Years old (1998-12-25, December 25<sup>th</sup>, 1998)</li>
-        </ul>
+        <hr />
+        <div class="image-gallery">
+          <img src="/images/Okidokie98 at KVM Esports.jpg" alt="Okidokie98 at KVM Esports" width=auto height="450px">
+          <ul class="personal-list">
+            
+            <li>Brandon "<a target="_blank"
+              href="https://liquipedia.net/rainbowsix/Okidokie98">Okidokie98</a>" de Baat</li>
+            <!-- <li>?? Years old (1998-12-25; December 25<sup>th</sup>, 1998)</li> -->
+              <li>Vlissingen (Flushing)</li>
+              <li>At Home</li>
+              <li></li>
+          </ul>
+        </div>
+        <h3>Age</h3>
+        <div class="w3-container">
+          <p>Label outside of the progress bar:</p>
+        
+          <div class="w3-light-grey w3-round">
+            <div id="myBar" class="w3-round w3-blue" style="height:24px;width:0%">
+            </div>
+          </div>
+        
+          <p id="myP">Current Age: <span id="demo">0</span></p>
+        
+          <button class="w3-button w3-light-grey" onclick="move();this.disabled='true'">Reveal Age</button> 
+        </div>
       </div>
       <div class="new-box-test">
-        <h1>Free Time</h1>
+        <h1>Esports Information</h1>
         <!-- Het idee is om een gallerij te maken met de interessante resultaten tijdens mijn esports tijd -->
         <div class="gallery">
-            <img src="/images/Rainbow 6 Esports 2023 lightmode.png" alt="R6 Esports Logo" width="200">
-          <br /><cite>Rainbow Six Siege Esports Circuit (BLAST 2023)</cite>
+          <img src="/images/Rainbow 6 Esports 2023 lightmode.png" alt="R6 Esports Logo" width="100">
+          <cite>Results over the years as a Team Analyst</cite>
         </div>
-        <ul>
-          <li>Reviewer for Liquipedia Rainbow Six Siege</li>
-          <li>Team Analyst for FireBird Esports (MNEB - Hunagry)</li>
-          <li>Part-Time Job as Assistent-Teamleader at Jumbo (Supermarket)</li>
-        </ul>
+        <section class="table">
+          <table class="table-striped">
+            <thead class="table-row-striped">
+              <th>Date</th>
+              <th><abbr title="S-Tier, A-Tier, B-Tier, C-Tier, D-Tier">Tier</abbr></th>
+              <th>Icon</th>
+              <th>Event</th>
+              <th>Team Logo</th>
+              <th>Team Name</th>
+              <th>Result</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2019-10-20</td>
+                <td>C</td>
+                <td>
+                  <image src="/images/Events/DreamHack lightmode.png" title="" class="esports-event-logo" />
+                </td>
+                <td><a href="https://liquipedia.net/rainbowsix/DreamHack/2019/Rotterdam" title="DreamHack Rotterdam"
+                    target="_blank">DreamHack Rotterdam</a></td>
+                <td>
+                  <image src="/images/Teams/Aequilibritas E-Sports lightmode.png" title="Aequilibritas E-Sports"
+                    class="esports-team-logo" />
+                </td>
+                <td>Aequilibritas E-Sports</td>
+                <td class="result-2">2nd</td>
+              </tr>
+              <tr>
+                <td>2019-12-14</td>
+                <td>C</td>
+                <td>
+                  <image src="/images/Events/Benelux League S4.png" title="" class="esports-event-logo" />
+                </td>
+                <td><a href="https://liquipedia.net/rainbowsix/ESL/Benelux/League/Season_4"
+                    title="ESL Benelux League Season 4" target="_blank">ESL Benelux League Season 4</a></td>
+                <td>
+                  <image src="/images/Teams/Epsilon Esports lightmode.png" title="Epsilon Esports"
+                    class="esports-team-logo" />
+                </td>
+                <td>Epsilon Esports</td>
+                <td class="result-2">2nd</td>
+              </tr>
+              <tr>
+                <td>2020-06-21</td>
+                <td>C</td>
+                <td>
+                  <image src="/images/Events/Benelux League S5-6.png" title="" class="esports-event-logo" />
+                </td>
+                <td><a href="" title="Benelux League Season 5" target="_blank">Benelux League Season 5</a></td>
+                <td>
+                  <image src="/images/Teams/Sector One 2019 lightmode.png" title="Sector One"
+                    class="esports-team-logo" />
+                </td>
+                <td>Sector One</td>
+                <td class="result-2">2nd</td>
+              </tr>
+              <tr>
+                <td>2020-10-23</td>
+                <td>B</td>
+                <td>
+                  <image src="/images/Events/European Challanger League.png" title="" class="esports-event-logo" />
+                </td>
+                <td><a href="" title="" target="_blank">European Challenger League 2020</a></td>
+                <td>
+                  <image src="/images/Teams/Black Mamba Esports allmode.png" title="Black Mamba Esports"
+                    class="esports-team-logo" />
+                </td>
+                <td>Black Mamba Esports</td>
+                <td class="result-11-12">11-12th</td>
+              </tr>
+              <tr>
+                <td>2020-12-06</td>
+                <td>D</td>
+                <td>
+                  <image src="/images/Rainbow 6 Esports 2023 lightmode.png" title="" class="esports-event-logo" />
+                </td>
+                <td><a href="" title="Black Mesa Turkey Cup" target="_blank">Black Mesa Turkey Cup</a></td>
+                <td>
+                  <image src="/images/Teams/Aethra Esports allmode.png" title="Aethra Esports"
+                    class="esports-team-logo" />
+                </td>
+                <td>Aethra Esports</td>
+                <td class="result-1">1st</td>
+              </tr>
+              <tr>
+                <td>2020-12-13</td>
+                <td>C</td>
+                <td>
+                  <image src="/images/Events/Benelux Cup allmode.png" title="Benelux Cup" class="esports-event-logo" />
+                </td>
+                <td><a href="" title="Benelux Cup" target="_blank">Benelux Cup</a></td>
+                <td>
+                  <image src="/images/Teams/Aethra Esports allmode.png" title="Aethra Esports"
+                    class="esports-team-logo" />
+                </td>
+                <td>Aethra Esports</td>
+                <td class="result-2">2nd</td>
+              </tr>
+              <tr>
+                <td>2021-08-07</td>
+                <td>C</td>
+                <td>
+                  <image src="/images/Events/Benelux League S5-6.png" title="" class="esports-event-logo" />
+                </td>
+                <td><a href="https://liquipedia.net/rainbowsix/Benelux/League/Season_6" title="Benelux League Season 6"
+                    target="_blank">Benelux League Season 6</a></td>
+                <td>
+                  <image src="/images/Teams/KV Mechelen Esports allmode.png" title="KV Mechelen Esports"
+                    class="esports-team-logo" />
+                </td>
+                <td>KV Mechelen Esports</td>
+                <td class="result-3-4">3rd-4th</td>
+              </tr>
+              <tr>
+                <td>2022-01-09</td>
+                <td>C</td>
+                <td>
+                  <image src="/images/Events/Benelux Cup allmode.png" title="Benelux Cup" class="esports-event-logo" />
+                </td>
+                <td><a href="https://liquipedia.net/rainbowsix/Benelux/Cup/Season_2" title="Benelux Cup Season 2"
+                    target="_blank">Benelux Cup Season 2</a></td>
+                <td>
+                  <image src="/images/Teams/KV Mechelen Esports allmode.png" title="KV Mechelen Esports"
+                    class="esports-team-logo" />
+                </td>
+                <td>KV Mechelen Esports</td>
+                <td class="result-2">2nd</td>
+              </tr>
+              <tr>
+                <td>2022-06-17</td>
+                <td>C</td>
+                <td>
+                  <image src="/images/Events/PG Nationals lightmode.png" title="" class="esports-event-logo" />
+                </td>
+                <td><a href="" title="PG Nationals 2022" target="_blank">PG Nationals 2022</a></td>
+                <td>
+                  <image src="/images/Teams/Italian Gaming Project (IGP) allmode.png" title="Italian Gaming Project"
+                    class="esports-team-logo" />
+                </td>
+                <td>Italian Gaming Project</td>
+                <td class="result-8">8th</td>
+              </tr>
+              <tr>
+                <td>2022-12-02</td>
+                <td>B</td>
+                <td>
+                  <image src="/images/Events/European Challanger League.png" title="" class="esports-event-logo" />
+                </td>
+                <td><a href="https://liquipedia.net/rainbowsix/European_League/2022/Challenger_League"
+                    title="European Challenger League 2022" target="_blank">European Challenger League 2022</a></td>
+                <td>
+                  <image src="/images/Teams/JLingz Esports lightmode.png" title="JLingz Esports"
+                    class="esports-team-logo" />
+                </td>
+                <td>JLingz Esports</td>
+                <td class="result-5-6">5th-6th</td>
+              </tr>
+              <tr>
+                <td>2022-12-07</td>
+                <td>D</td>
+                <td>
+                  <image src="/images/Events/Titan Series lightmode.png" title="" class="esports-event-logo" />
+                </td>
+                <td><a href="https://liquipedia.net/rainbowsix/Titan_Series/Season_3" title="Titan Series - Season 3"
+                    target="_blank">Titan Series - Season 3</a></td>
+                <td>
+                  <image src="/images/Teams/Dynasty allmode.png" title="Dynasty" class="esports-team-logo" />
+                </td>
+                <td>Dynasty</td>
+                <td class="result-5-6">5th-6th</td>
+              </tr>
+              <tr>
+                <td>2023-07-08</td>
+                <td>C</td>
+                <td>
+                  <image src="/images/Events/MNEB allmode.png" title="" class="esports-event-logo" />
+                </td>
+                <td><a href="https://liquipedia.net/rainbowsix/Magyar_Nemzeti_E-sport_Bajnoks%C3%A1g/Season_5"
+                    title="Magyar Nemzeti E-sport Bajnokság: Season 5" target="_blank">Magyar Nemzeti E-sport Bajnokság:
+                    Season 5</a></td>
+                <td>
+                  <image src="/images/Teams/FireBird Esports allmode.png" title="FireBird Esports"
+                    class="esports-team-logo" />
+                </td>
+                <td>FireBird Esports</td>
+                <td class="result-4">4th</td>
+              </tr>
+              <!-- Ongoing Tournaments -->
+              <tr>
+                <td>2019-01-01</td>
+                <td>C</td>
+                <td>
+                  <image src="/images/Events/MNEB allmode.png" title="" class="esports-event-logo" />
+                </td>
+                <td><a href="" title="" target="_blank">Magyar Nemzeti E-sport Bajnokság: Season 6</a></td>
+                <td>
+                  <image src="/images/Teams/FireBird Esports allmode.png" title="FireBird Esports"
+                    class="esports-team-logo" />
+                </td>
+                <td>FireBird Esports</td>
+                <td class="ongoing">Ongoing</td>
+              </tr>
+              <tr>
+                <td>2019-01-01</td>
+                <td>D</td>
+                <td>
+                  <image src="/images/Events/VIBRANT League allmode.png" title="" class="esports-event-logo" />
+                </td>
+                <td><a href="" title="" target="_blank">Vibrant League: Season 1</a></td>
+                <td>
+                  <image src="/images/Teams/FireBird Esports allmode.png" title="FireBird Esports"
+                    class="esports-team-logo" />
+                </td>
+                <td>FireBird Esports</td>
+                <td class="ongoing">Ongoing</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </section>
       </div>
     </div>
   </main>
@@ -80,11 +317,16 @@
   <div class="dropdown">
     <span><img src="/images/Socials/All Socials lightmode.png" alt="All Socials Dropdown" width="100px"></span>
     <div class="dropdown-content">
-      <a href="https://www.facebook.com/Brandon.Okidokie98/" target="_blank"><img src="/images/Socials/Facebook lightmode.png" alt="Facebook" class="social-icons" title="Facebook"/></a>
-      <a href="https://www.instagram.com/okidokie98/" target="_blank"><img src="/images/Socials/Instagram lightmode.png" alt="Instagram" class="social-icons" title="Instagram"/></a>
-      <a href="https://www.reddit.com/user/Okidokie98/" target="_blank"><img src="/images/Socials/Reddit lightmode.png" alt="Reddit" class="social-icons" title="Reddit"/></a>
-      <a href="https://twitter.com/Okidokie98" target="_blank"><img src="/images/Socials/X ligthmode.png" alt="X (Twitter)" class="social-icons" title="X (Twitter)"/></a>
-      <a href="https://liquipedia.net/rainbowsix/Okidokie98" target="_blank"><img src="/images/Socials/Website lightmode.png" alt="Liquipedia (Website)" class="social-icons" title="Liquipedia (Website)"/></a>
+      <a href="https://www.facebook.com/Brandon.Okidokie98/" target="_blank"><i class="fa-brands fa-facebook fa-3x"
+          title="Facebook"></i></a>
+      <a href="https://www.instagram.com/okidokie98/" target="_blank"><i class="fa-brands fa-instagram fa-3x"
+          title="Instagram"></i></a>
+      <a href="https://www.reddit.com/user/Okidokie98/" target="_blank"><i class="fa-brands fa-reddit-alien fa-3x"
+          title="Reddit"></i></a>
+      <a href="https://twitter.com/Okidokie98" target="_blank"><i class="fa-brands fa-x-twitter fa-3x"
+          title="X (Twitter)"></i></a>
+      <a href="https://liquipedia.net/rainbowsix/Okidokie98" target="_blank"><i class="fa-solid fa-link fa-3x"
+          title="Website (Liquipedia)"></i></a>
     </div>
   </div>
   <!-- Socials end -->

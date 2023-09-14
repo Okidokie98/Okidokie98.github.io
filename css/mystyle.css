@@ -12,7 +12,7 @@
   float: left;
   padding-top: 10px;
 }
-  
+
 .navbar li a {
   display: inline;
   width: 75px;
@@ -52,11 +52,16 @@ body {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 300px;
+  min-width: 350px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
   bottom: 100%;
+}
+
+.dropdown-content a {
+  color: inherit;
+  padding: 2px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -95,6 +100,8 @@ body {
 
 footer {
   background-color: #04aa6db9;
+  width: 100%;
+  /* overflow: hidden; */
 }
 
 main {
@@ -170,7 +177,7 @@ td {
 progress {
   margin-top: 20px;
   margin-left: -50px;
- /* transform: rotate(-90deg); */
+  /* transform: rotate(-90deg); */
   height: 200px;
 }
 
@@ -182,8 +189,10 @@ progress:before {
 /* Change class names perhaps */
 
 .col-container {
-  display: table; /* Make the container element behave like a table */
-  width: 100%; /* Set full-width to expand the whole page */
+  display: table;
+  /* Make the container element behave like a table */
+  width: 100%;
+  /* Set full-width to expand the whole page */
   margin: auto;
   padding: 5px;
 }
@@ -225,6 +234,7 @@ progress:before {
   text-decoration: none;
   border: 1px solid grey;
 }
+
 #navbar a:hover {
   display: inline;
   background-color: grey;
@@ -239,22 +249,31 @@ progress:before {
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
+.sticky+.content {
   padding-top: 60px;
 }
 
 /* The side navigation menu */
 .sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
   left: 0;
-  background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  background-color: #111;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
 }
 
 /* The navigation menu links */
@@ -289,20 +308,106 @@ progress:before {
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
 .side-menu {
   position: fixed;
-  }
+}
 
-  .side-menu-icon {
-    width: 50px;
-  }
+.side-menu-icon {
+  width: 50px;
+}
 
-  .social-icons {
-    width: 50px;
-    height: auto;
-    padding: 5px;
-  }
+.social-icons {
+  width: 50px;
+  height: auto;
+  padding: 5px;
+}
+
+.image-gallery {
+  padding: 2px;
+  display: inline-flex;
+}
+
+/* .table {
+    margin-left: 35%;
+    margin-right: 35%;
+  } */
+
+/* Table Results Colors */
+
+.ongoing {
+  background-color: lightskyblue;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.result-1 {
+  background-color: gold;
+  color: black;
+  font-weight: bold;
+}
+
+.result-2 {
+  background-color: gray;
+  color: white;
+  font-weight: bold;
+}
+
+.result-3-4 {
+  background-color: brown;
+  color: white;
+  font-weight: bold;
+}
+
+.result-4 {
+  background-color: burlywood;
+  color: black;
+  font-weight: bold;
+}
+
+.result-5-6 {
+  background-color: #007f98;
+  color: white;
+  font-weight: bold;
+}
+
+.result-8 {
+  background-color: #007f98;
+  color: white;
+  font-weight: bold;
+}
+
+.result-11-12 {
+  background-color: #176f83;
+  color: white;
+  font-weight: bold;
+}
+
+.esports-event-logo,
+.esports-team-logo {
+  width: 35px;
+  height: auto;
+  margin: -2px;
+}
+
+
+.personal-list {
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+#myP {
+  font-size: 40px;
+}
+
+a {
+  color: #337ab7;
+}
