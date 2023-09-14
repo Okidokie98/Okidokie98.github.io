@@ -393,14 +393,22 @@ progress:before {
 
 .esports-event-logo,
 .esports-team-logo {
-  width: 35px;
+  width: 30px;
   height: auto;
   margin: -2px;
 }
 
+.table-striped {
+  font-size: 15px;
+}
+
+table {
+  width: 100%;
+}
+
 
 .personal-list {
-  font-size: 20px;
+  font-size: 15px;
   margin-top: 0;
   text-align: left;
 }
