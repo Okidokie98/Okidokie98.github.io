@@ -60,7 +60,7 @@ function showSlides(n) {
 function move() {
   var elem = document.getElementById("myBar");   
   var width = 0;
-  var id = setInterval(frame, 175);
+  var id = setInterval(frame, 165);
   function frame() {
     if (width >= 24) {
       clearInterval(id);

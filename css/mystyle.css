@@ -401,7 +401,13 @@ progress:before {
 
 .personal-list {
   font-size: 20px;
-  margin-top: 50px;
+  margin-top: 0;
+  text-align: left;
+}
+
+.personal-list p {
+  font-style: italic;
+  text-decoration: underline;
 }
 
 #myP {
