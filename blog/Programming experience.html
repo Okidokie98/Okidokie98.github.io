@@ -9,22 +9,42 @@
   <link rel="stylesheet" href="/css/mystyle.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <title>Programming Experience</title>
+  <script src="/js/main.js"></script>
+  <script src="https://kit.fontawesome.com/6989e559e1.js" crossorigin="anonymous"></script>
+  <title>Blog: Programming Experience</title>
 </head>
 
 <body>
-  <!-- Navigation Start -->
-  <ul class="navbar">
-    <li><a href="/index.html">Home</a></li>
-    <li><a href="/profile.html">Profile</a></li>
-    <li><a href="/dashboard.html">Dashboard</a></li>
-    <li><a href="/faq.html">FAQ</a></li>
-    <li><a href="/blog.html" class="active">Blog</a></li>
-  </ul>
-  <!-- Navigation end -->
-  <nav>
-    <a href="/blog.html" ><<<  Return to Blog</a>
-  </nav>
+  <div id="navbar">
+    <a href="../index.html">Home</a>
+    <a href="../profile.html">Profile</a>
+    <a href="../dashboard.html">Dashboard</a>
+    <a href="../faq.html">FAQ</a>
+    <a href="../blog.html" class="active">Blog</a>
+    <!-- <button onclick="openNav()" class="btn btn-primary, side-menu">Open</button> -->
+    <img src="/images/Sidemenu icon.png" onclick="openNav()" class="side-menu, side-menu-icon" />
+  </div>
+  <!-- Sidebar start -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a target="_blank"
+      href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/OER-HZ-Bacheloropleidingen-voltijd-2023-2024-DEF-versie-20230720.pdf">
+      CER (Course and Examination Regulations)
+    </a>
+    <a target="_blank"
+      href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf">IR
+      (Implementation Regulations)</a>
+    <a target="_blank" href="https://learn.hz.nl/my/">HZ Learn</a>
+    <a target="_blank" href="https://teams.microsoft.com/_#/school/teams-grid/General?ctx=teamsGrid">HZ
+      Teams</a>
+    <a target="_blank" href="https://hz.osiris-student.nl/#/voortgang/">Study Progress</a>
+    <a target="_blank" href="https://github.com/HZ-HBO-ICT">Github HZ</a>
+    <a href="https://hz.nl/" target="_blank"><img
+        src="https://cdn.discordapp.com/attachments/1149642068302503988/1151073961975758889/HZ_logo_full_allmode_v2.png"
+        width="300px" /></a>
+  </div>
+
+    <button type="button" class="btn btn-secondary" onclick="window.location.href = '/blog.html';">Return to Blog</button>
   <main>
     <article class="all-posts">
       <h1>Programming Experience</h1>
@@ -39,26 +59,23 @@
   </main>
 </body>
 <footer>
-  <!-- Aside bar start -->
+  <!-- Socials start -->
   <div class="dropdown">
-    <span><img src="/images/HZ Logo.png" alt="HZ Logo"></span>
+    <span><img src="/images/Socials/All Socials lightmode.png" alt="All Socials Dropdown" width="100px"></span>
     <div class="dropdown-content">
-      <ul>
-        <li>
-          <a target="_blank"
-            href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/OER-HZ-Bacheloropleidingen-voltijd-2023-2024-DEF-versie-20230720.pdf">
-            CER (Course and Examination Regulations)
-          </a>
-        </li>
-        <li><a target="_blank" href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf">IR (Implementation Regulations)</a></li>
-        <li><a target="_blank" href="https://learn.hz.nl/my/">HZ Learn</a></li>
-        <li><a target="_blank" href="https://teams.microsoft.com/_#/school/teams-grid/General?ctx=teamsGrid">HZ Teams</a></li>
-        <li><a target="_blank" href="https://hz.osiris-student.nl/#/voortgang/">Study Progress</a></li>
-        <li><a target="_blank" href="https://github.com/HZ-HBO-ICT">Github HZ</a></li>
-      </ul>
+      <a href="https://www.facebook.com/Brandon.Okidokie98/" target="_blank"><i class="fa-brands fa-facebook fa-3x"
+          title="Facebook"></i></a>
+      <a href="https://www.instagram.com/okidokie98/" target="_blank"><i class="fa-brands fa-instagram fa-3x"
+          title="Instagram"></i></a>
+      <a href="https://www.reddit.com/user/Okidokie98/" target="_blank"><i class="fa-brands fa-reddit-alien fa-3x"
+          title="Reddit"></i></a>
+      <a href="https://twitter.com/Okidokie98" target="_blank"><i class="fa-brands fa-x-twitter fa-3x"
+          title="X (Twitter)"></i></a>
+      <a href="https://liquipedia.net/rainbowsix/Okidokie98" target="_blank"><i class="fa-solid fa-link fa-3x"
+          title="Website (Liquipedia)"></i></a>
     </div>
   </div>
-  <!-- Aside bar end -->
+  <!-- Socials end -->
 </footer>
 
 </html>
