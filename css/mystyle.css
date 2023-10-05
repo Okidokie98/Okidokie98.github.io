@@ -420,3 +420,11 @@ table {
 a {
   color: #337ab7;
 }
+
+.trafficLightOrange {
+  background-color: orange;
+}
+
+.trafficLightRed {
+  background-color: orangered;
+}
