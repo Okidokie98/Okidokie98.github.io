@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="css/mystyle.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -16,13 +16,14 @@
 </head>
 
 <body>
+  <section>
   <div id="navbar">
     <a href="index.html">Home</a>
     <a href="profile.html">Profile</a>
     <a href="dashboard.html" class="active">Dashboard</a>
     <a href="faq.html">FAQ</a>
     <a href="blog.html">Blog</a>
-    <!-- <button onclick="openNav()" class="btn btn-primary, side-menu">Open</button> -->
+    <a href="notes.html">Notes</a>
     <img src="images/Sidemenu icon.png" onclick="openNav()" class="side-menu, side-menu-icon"/>
   </div>
 <!-- Sidebar start -->
@@ -40,16 +41,18 @@
         Teams</a>
     <a target="_blank" href="https://hz.osiris-student.nl/#/voortgang/">Study Progress</a>
     <a target="_blank" href="https://github.com/HZ-HBO-ICT">Github HZ</a>
-    <a href="https://hz.nl/" target="_blank"><img src="https://cdn.discordapp.com/attachments/1149642068302503988/1151073961975758889/HZ_logo_full_allmode_v2.png" width="300px"/></a>
+    <a href="https://hz.nl/" target="_blank"><img src="https://cdn.discordapp.com/attachments/1149642068302503988/1151073961975758889/HZ_logo_full_allmode_v2.png" width="400px"/></a>
   </div>
   
   <!-- Use any element to open the sidenav -->
 
 
-<!-- Sidebar end -->  
+<!-- Sidebar end --> 
+<section> 
   <main>
     <h1>Dashboard</h1>
     <h2>Study Monitor 2023-2024</h2>
+    <hr/>
     <div class="flex-container">
       <div class="flex-child-2">
         <ul class="legend">
@@ -182,7 +185,7 @@
 
         </table>
       </div>
-
+<br/>
       <div class="flex-child-1">
 
         <h2>Study Progress</h2>
@@ -191,7 +194,7 @@
         <hr/>
         <br/>
         <label for="current-ec"> 
-          <progress value="2.5" max="60" class="w3-xxlarge">70 %</progress>
+          <progress value="2.5" max="60" class="w3-xlarge">70 %</progress>
         </label>
 
 

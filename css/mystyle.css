@@ -170,10 +170,10 @@ td {
 }
 
 progress {
-  margin-top: 20px;
-  margin-left: -50px;
+  margin-top: 30px;
+  margin-left: 50px;
   /* transform: rotate(-90deg); */
-  height: 200px;
+  height: 275px;
 }
 
 progress:before {
