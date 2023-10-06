@@ -17,191 +17,197 @@
 
 <body>
   <section>
-  <div id="navbar">
-    <a href="index.html">Home</a>
-    <a href="profile.html">Profile</a>
-    <a href="dashboard.html" class="active">Dashboard</a>
-    <a href="faq.html">FAQ</a>
-    <a href="blog.html">Blog</a>
-    <a href="notes.html">Notes</a>
-    <img src="images/Sidemenu icon.png" onclick="openNav()" class="side-menu, side-menu-icon"/>
-  </div>
-<!-- Sidebar start -->
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="faq.html">FAQ</a>
+      <a href="blog.html">Blog</a>
+      <a href="notes.html">Notes</a>
+      <img src="images/Sidemenu icon.png" onclick="openNav()" class="side-menu, side-menu-icon" />
+    </div>
+    <!-- Sidebar start -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a target="_blank"
         href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/OER-HZ-Bacheloropleidingen-voltijd-2023-2024-DEF-versie-20230720.pdf">
         CER (Course and Examination Regulations)
       </a>
-    <a target="_blank"
+      <a target="_blank"
         href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf">IR
         (Implementation Regulations)</a>
-    <a target="_blank" href="https://learn.hz.nl/my/">HZ Learn</a>
-    <a target="_blank" href="https://teams.microsoft.com/_#/school/teams-grid/General?ctx=teamsGrid">HZ
+      <a target="_blank" href="https://learn.hz.nl/my/">HZ Learn</a>
+      <a target="_blank" href="https://teams.microsoft.com/_#/school/teams-grid/General?ctx=teamsGrid">HZ
         Teams</a>
-    <a target="_blank" href="https://hz.osiris-student.nl/#/voortgang/">Study Progress</a>
-    <a target="_blank" href="https://github.com/HZ-HBO-ICT">Github HZ</a>
-    <a href="https://hz.nl/" target="_blank"><img src="https://cdn.discordapp.com/attachments/1149642068302503988/1151073961975758889/HZ_logo_full_allmode_v2.png" width="400px"/></a>
-  </div>
-  
-  <!-- Use any element to open the sidenav -->
-
-
-<!-- Sidebar end --> 
-<section> 
-  <main>
-    <h1>Dashboard</h1>
-    <h2>Study Monitor 2023-2024</h2>
-    <hr/>
-    <div class="flex-container">
-      <div class="flex-child-2">
-        <ul class="legend">
-          <h3>Legend</h3>
-          <h6>Hover over the text for more info.</h6>
-          <li><span class="study-upcoming"></span><abbr title="Courses/Exams still to come">Upcoming</abbr></li>
-          <li><span class="study-complete"></span><abbr title="Successfully completed the course">Complete</abbr></li>
-          <li><span class="study-ongoing"></span><abbr title="Ongoing, some exams still need to be taken">Ongoing</abbr></li>
-          <li><span class="study-half-complete"></span><abbr title="Half of the exams were successfull, others need a resit">Half Complete</abbr></li>
-          <li><span class="study-failed"></span><abbr title="Course failed, resits are required to gain EC!">Failed</abbr></li>
-          
-        </ul>
-      </div>
-      <div class="flex-child-1">
-
-
-        <table>
-          <tr>
-            <th>Quartile</th>
-            <th>Course</th>
-            <th>EC's Awarded</th>
-            <th>Exam</th>
-            <th>Grade</th>
-            <th><abbr title="Avergae Grade across the course or Quartile">AVG</abbr></th>
-          </tr>
-
-          <tr>
-            <td rowspan="3">1</td>
-            <td class="study-complete">Program- & Career Orientation</td>
-            <td class="study-complete">2.5 EC</td>
-            <td class="study-complete">Website</td>
-            <td class="study-complete">7.5</td>
-            <td rowspan="3">-</td>
-          </tr>
-
-          <tr>
-            <td class="study-upcoming">Computer Science Basics</td>
-            <td class="study-upcoming">5.0 EC</td>
-            <td class="study-upcoming">Written exam</td>
-            <td class="study-upcoming">-</td>
-          </tr>
-
-          <tr>
-            <td class="study-ongoing">Programming Basics</td>
-            <td class="study-ongoing">5.0 EC</td>
-            <td class="study-ongoing">Case study exam</td>
-            <td class="study-ongoing">-</td>
-          </tr>
-
-          <tr>
-            <td rowspan="2">2</td>
-            <td class="study-failed" rowspan="2">Object-Oriented Programming</td>
-            <td class="study-failed" rowspan="2">10.0 EC</td>
-            <td class="study-failed">Group assignment</td>
-            <td class="study-failed">4.5</td>
-            <td rowspan="2">-</td>
-          </tr>
-          <tr class="">
-            <td class="study-failed">Case study exam</td>
-            <td class="study-failed">5.4</td>
-          </tr>
-
-          <tr>
-            <td rowspan="4">3</td>
-            <td class="study-half-complete" rowspan="4">Framework Project 1</td>
-            <td class="study-failed" rowspan="4">10.0 EC</td>
-            <td class="study-complete">On-site case study exam</td>
-            <td class="study-complete">6.1</td>
-            <td rowspan="4">-</td>
-          </tr>
-          <tr class="">
-            <td class="study-complete">Databse exam</td>
-            <td class="study-complete">6.5</td>
-          </tr>
-          <tr class="">
-            <td class="study-ongoing">Group presentation</td>
-            <td class="study-ongoing">-</td>
-          </tr>
-          <tr class="">
-            <td class="study-failed">Group portfolio</td>
-            <td class="study-failed">4.9</td>
-          </tr>
-
-          <tr class="">
-            <td rowspan="3">4</td>
-            <td rowspan="3">Framework Project 2</td>
-            <td rowspan="3">10.0 EC</td>
-            <td class="">Final delivery</td>
-            <td class="">-</td>
-            <td rowspan="3">-</td>
-          </tr>
-          <tr class="">
-            <td class="">Report of acceptance</td>
-            <td class="">-</td>
-          </tr>
-          <tr class="">
-            <td class="">IT Development Portfolio</td>
-            <td class="">-</td>
-          </tr>
-
-          <tr class="">
-            <td>3/4</td>
-            <td>Business IT Consultancy basics</td>
-            <td>2.5 EC</td>
-            <td class="">Video</td>
-            <td class="">-</td>
-            <td rowspan="1">-</td>
-          </tr>
-
-          <tr class="">
-            <td rowspan="3">Year</td>
-            <td>IT Personality Week</td>
-            <td>1.25 EC</td>
-            <td class="">Portfolio</td>
-            <td class="">-</td>
-            <td rowspan="3">-</td>
-          </tr>
-          <tr class="">
-            <td>IT Personality 1</td>
-            <td>1.25 EC</td>
-            <td class="">Portfolio</td>
-            <td class="">-</td>
-          </tr>
-          <tr class="">
-            <td>IT Personality 2</td>
-            <td>1.25 EC</td>
-            <td class="">Portfolio</td>
-            <td class="">-</td>
-          </tr>
-
-        </table>
-      </div>
-<br/>
-      <div class="flex-child-1">
-
-        <h2>Study Progress</h2>
-        <aside>To qualify for the next year of the study you would need a minimum of 45 EC.</aside>
-        
-        <hr/>
-        <br/>
-        <label for="current-ec"> 
-          <progress value="2.5" max="60" class="w3-xlarge">70 %</progress>
-        </label>
-
-
-      </div>
+      <a target="_blank" href="https://hz.osiris-student.nl/#/voortgang/">Study Progress</a>
+      <a target="_blank" href="https://github.com/HZ-HBO-ICT">Github HZ</a>
+      <a href="https://hz.nl/" target="_blank"><img
+          src="https://cdn.discordapp.com/attachments/1149642068302503988/1151073961975758889/HZ_logo_full_allmode_v2.png"
+          width="400px" /></a>
     </div>
 
-  </main>
+    <!-- Use any element to open the sidenav -->
+
+
+    <!-- Sidebar end -->
+    <section>
+      <main>
+        <h1>Dashboard</h1>
+        <h2>Study Monitor 2023-2024</h2>
+        <hr />
+        <div class="flex-container">
+          <div class="flex-child-2">
+            <ul class="legend">
+              <h3>Legend</h3>
+              <h6>Hover over the text for more info.</h6>
+              <li><span class="study-upcoming"></span><abbr title="Courses/Exams still to come">Upcoming</abbr></li>
+              <li><span class="study-complete"></span><abbr title="Successfully completed the course">Complete</abbr>
+              </li>
+              <li><span class="study-ongoing"></span><abbr
+                  title="Ongoing, some exams still need to be taken">Ongoing</abbr></li>
+              <li><span class="study-half-complete"></span><abbr
+                  title="Half of the exams were successfull, others need a resit">Half Complete</abbr></li>
+              <li><span class="study-failed"></span><abbr
+                  title="Course failed, resits are required to gain EC!">Failed</abbr></li>
+
+            </ul>
+          </div>
+          <div class="flex-child-1">
+
+
+            <table>
+              <tr>
+                <th>Quartile</th>
+                <th>Course</th>
+                <th>EC's Awarded</th>
+                <th>Exam</th>
+                <th>Grade</th>
+                <th><abbr title="Avergae Grade across the course or Quartile">AVG</abbr></th>
+              </tr>
+
+              <tr>
+                <td rowspan="3">1</td>
+                <td class="study-complete">Program- & Career Orientation</td>
+                <td class="study-complete">2.5 EC</td>
+                <td class="study-complete">Website</td>
+                <td class="study-complete">7.5</td>
+                <td rowspan="3">-</td>
+              </tr>
+
+              <tr>
+                <td class="study-upcoming">Computer Science Basics</td>
+                <td class="study-upcoming">5.0 EC</td>
+                <td class="study-upcoming">Written exam</td>
+                <td class="study-upcoming">-</td>
+              </tr>
+
+              <tr>
+                <td class="study-ongoing">Programming Basics</td>
+                <td class="study-ongoing">5.0 EC</td>
+                <td class="study-ongoing">Case study exam</td>
+                <td class="study-ongoing">-</td>
+              </tr>
+
+              <tr>
+                <td rowspan="2">2</td>
+                <td class="study-failed" rowspan="2">Object-Oriented Programming</td>
+                <td class="study-failed" rowspan="2">10.0 EC</td>
+                <td class="study-failed">Group assignment</td>
+                <td class="study-failed">4.5</td>
+                <td rowspan="2">-</td>
+              </tr>
+              <tr class="">
+                <td class="study-failed">Case study exam</td>
+                <td class="study-failed">5.4</td>
+              </tr>
+
+              <tr>
+                <td rowspan="4">3</td>
+                <td class="study-half-complete" rowspan="4">Framework Project 1</td>
+                <td class="study-failed" rowspan="4">10.0 EC</td>
+                <td class="study-complete">On-site case study exam</td>
+                <td class="study-complete">6.1</td>
+                <td rowspan="4">-</td>
+              </tr>
+              <tr class="">
+                <td class="study-complete">Databse exam</td>
+                <td class="study-complete">6.5</td>
+              </tr>
+              <tr class="">
+                <td class="study-ongoing">Group presentation</td>
+                <td class="study-ongoing">-</td>
+              </tr>
+              <tr class="">
+                <td class="study-failed">Group portfolio</td>
+                <td class="study-failed">4.9</td>
+              </tr>
+
+              <tr class="">
+                <td rowspan="3">4</td>
+                <td rowspan="3">Framework Project 2</td>
+                <td rowspan="3">10.0 EC</td>
+                <td class="">Final delivery</td>
+                <td class="">-</td>
+                <td rowspan="3">-</td>
+              </tr>
+              <tr class="">
+                <td class="">Report of acceptance</td>
+                <td class="">-</td>
+              </tr>
+              <tr class="">
+                <td class="">IT Development Portfolio</td>
+                <td class="">-</td>
+              </tr>
+
+              <tr class="">
+                <td>3/4</td>
+                <td>Business IT Consultancy basics</td>
+                <td>2.5 EC</td>
+                <td class="">Video</td>
+                <td class="">-</td>
+                <td rowspan="1">-</td>
+              </tr>
+
+              <tr class="">
+                <td rowspan="3">Year</td>
+                <td>IT Personality Week</td>
+                <td>1.25 EC</td>
+                <td class="">Portfolio</td>
+                <td class="">-</td>
+                <td rowspan="3">-</td>
+              </tr>
+              <tr class="">
+                <td>IT Personality 1</td>
+                <td>1.25 EC</td>
+                <td class="">Portfolio</td>
+                <td class="">-</td>
+              </tr>
+              <tr class="">
+                <td>IT Personality 2</td>
+                <td>1.25 EC</td>
+                <td class="">Portfolio</td>
+                <td class="">-</td>
+              </tr>
+
+            </table>
+          </div>
+          <br />
+          <div class="flex-child-1">
+
+            <h2>Study Progress</h2>
+            <aside>To qualify for the next year of the study you would need a minimum of 45 EC.</aside>
+
+            <hr />
+            <br />
+            <label for="current-ec">
+              <progress value="2.5" max="60" class="w3-xlarge">70 %</progress>
+            </label>
+
+
+          </div>
+        </div>
+
+      </main>
 </body>
 
 <footer>

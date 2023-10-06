@@ -1,47 +1,16 @@
-.navbar {
-  list-style-type: none;
-  background-color: lightgreen;
-  /* Used for testing */
-  margin: 0;
-  padding: 0;
-  /* position: fixed; */
-  width: 100%;
-}
-
-.navbar li {
-  float: left;
-  padding-top: 10px;
-}
-
-.navbar li a {
-  display: inline;
-  width: 75px;
-  background-color: red;
-  /* Used for testing */
-  padding: 8px;
-  border: 1px;
-  margin: 1px;
-  padding-bottom: 7.5px;
-  border-style: solid;
-  border-color: black;
-}
-
-.navbar li a:hover {
-  display: inline;
-  width: 75px;
-  background-color: lightyellow;
-  /* Used for testing */
-}
-
 body {
   background-color: lightgray;
+  /* Text color change across the whole website */
+  /* color: purple; */
 }
 
+/* Navbar active box highlight */
 .active {
   background-color: #04aa6db9;
   color: white;
 }
 
+/* Dropdown but it is more of a drop"up" in the footer */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -68,6 +37,7 @@ body {
   display: block;
 }
 
+/* Used in the blog post, link for more info in italics */
 .moreInfo {
   font-style: italic;
   display: inline;
@@ -101,7 +71,6 @@ body {
 footer {
   background-color: #04aa6db9;
   width: 100%;
-  /* overflow: hidden; */
 }
 
 table,
@@ -115,7 +84,6 @@ td {
 }
 
 /* Study Completion colors */
-
 .study-complete {
   background-color: lightgreen;
 }
@@ -137,13 +105,11 @@ td {
 }
 
 /* Table Legend setup */
-
 .legend {
   list-style: none;
   text-align: left;
   display: inline-block;
 }
-
 
 .legend span {
   border: 2px solid black;
@@ -153,6 +119,7 @@ td {
   margin: 3px;
 }
 
+/* Dashboard boxes */
 .flex-container {
   display: flex;
 }
@@ -163,10 +130,6 @@ td {
 
 .flex-child-2 {
   margin-right: 5px;
-}
-
-.faq-list {
-  text-align: left;
 }
 
 progress {
@@ -192,7 +155,7 @@ progress:before {
   padding: 5px;
 }
 
-.new-box-test {
+.box {
   width: 30%;
   height: 500px;
   border: 2px solid black;
@@ -205,15 +168,7 @@ progress:before {
   border: 3px solid black;
 }
 
-/* Navbar 2.0 */
-
-
-
-
-
-
-
-/* Style the navbar */
+/* Navbar*/
 #navbar {
   overflow: hidden;
   background-color: #333;
@@ -236,39 +191,27 @@ progress:before {
   /* Used for testing */
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky+.content {
-  padding-top: 60px;
-}
-
 /* The side navigation menu */
 .sidenav {
-  height: 100%;
   /* 100% Full-height */
+  height: 100%;
+/* 0 width - change this with JavaScript */
   width: 0;
-  /* 0 width - change this with JavaScript */
-  position: fixed;
   /* Stay in place */
-  z-index: 1;
+  position: fixed;
   /* Stay on top */
-  top: 0;
+  z-index: 1;
   /* Stay at the top */
+  top: 0;
   left: 0;
-  background-color: #111;
   /* Black*/
-  overflow-x: hidden;
+  background-color: #111;
   /* Disable horizontal scroll */
-  padding-top: 60px;
+  overflow-x: hidden;
   /* Place content 60px from the top */
-  transition: 0.5s;
+  padding-top: 60px;
   /* 0.5 second transition effect to slide in the sidenav */
+  transition: 0.5s;
 }
 
 /* The navigation menu links */
@@ -331,77 +274,61 @@ progress:before {
   display: inline-flex;
 }
 
-/* .table {
-    margin-left: 35%;
-    margin-right: 35%;
-  } */
-
-/* Table Results Colors */
-
+/* Esports Table Results & Colors */
 .ongoing {
   background-color: lightskyblue;
   font-style: italic;
   font-weight: bold;
 }
-
 .result-1 {
   background-color: gold;
   color: black;
   font-weight: bold;
 }
-
 .result-2 {
   background-color: gray;
   color: white;
   font-weight: bold;
 }
-
 .result-3-4 {
   background-color: brown;
   color: white;
   font-weight: bold;
 }
-
 .result-4 {
   background-color: burlywood;
   color: black;
   font-weight: bold;
 }
-
 .result-5-6 {
   background-color: #007f98;
   color: white;
   font-weight: bold;
 }
-
 .result-8 {
   background-color: #007f98;
   color: white;
   font-weight: bold;
 }
-
 .result-11-12 {
   background-color: #176f83;
   color: white;
   font-weight: bold;
 }
-
 .esports-event-logo,
 .esports-team-logo {
   width: 30px;
   height: auto;
   margin: -2px;
 }
-
 .table-striped {
   font-size: 15px;
 }
-
 table {
   width: 100%;
 }
 
-
+/* Profile */
 .personal-list {
   font-size: 15px;
   margin-top: 0;
@@ -417,14 +344,15 @@ table {
   font-size: 40px;
 }
 
+/* Overwrite the color of the links back to blue since one imported CSS changes it to black/grey */
 a {
   color: #337ab7;
 }
 
+/* Blog Post: Traffic Light */
 .trafficLightOrange {
   background-color: orange;
 }
-
 .trafficLightRed {
   background-color: orangered;
 }
